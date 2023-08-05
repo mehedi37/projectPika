@@ -1,0 +1,25 @@
+pyttsx3
+# pip install --user pywin32 comtypes pypiwin32 pyttsx3
+googletrans
+pyaudio
+gTTS
+openai
+python-dotenv
+pandas
+tk
+urllib3
+idna
+certifi
+python-dotenv
+requests
+SpeechRecognition
+emoji
+
+# pyaudio
+# pip install pyttsx3
+# pip install googletrans
+# pip install gTTS
+# pip install openai
+# pip install python-dotenv
+# pip install pandas
+# pip install keyboard

@@ -1,3 +1,10 @@
+.vscode
+*.json
+
+myenv
+openai
+*.tk
+tempCodeRunnerFile*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
