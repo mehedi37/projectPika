@@ -11,6 +11,7 @@
   - Create a new project and add Google Sheets API to the project
   - Now get your OAuth json file. <i>(Search For how to get, if you have no clue what is this !)</i>
   - Update `SHEET_JSON` in `.env`, where you placed your credentials.json
+- For ChatGPT API [visit](https://platform.openai.com/account/api-keys)
 - Fill other `Environment Variables` as defined
 - Make sure you have `python3` in your machine.Use `python --version`
 - run `pip install -r requirements.txt --user`
