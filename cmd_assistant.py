@@ -61,7 +61,7 @@ imgGen = [
 ]
 
 
-# Lambda functions
+# Lambda functions to combine pre-defined commands and voice commands
 is_time_command = lambda command: any(time_command.lower() in command.lower() for time_command in time_cmd)
 is_date_command = lambda command: any(date_command.lower() in command.lower() for date_command in date)
 is_weather_command = lambda command: any(weather_command.lower() in command.lower() for weather_command in weather_commands)
@@ -72,7 +72,6 @@ is_imgGen_command = lambda command: any(img_command.lower() in command.lower() f
 
 
 # Main logic of response
-
 def cmd(command):
     if command == "hello":
         return "Hi there!"
@@ -101,5 +100,6 @@ def cmd(command):
     elif command == "how are you":
         return "I'm doing well, thank you!"
     else:
+        # uncomment bellow line for ChatGPT response but you need to put api key in the environment var
         # return f"{talk(command).strip()}"
         return f"Not Here !"

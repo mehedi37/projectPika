@@ -20,6 +20,7 @@ def talk(prompt):
     )
     return (response.choices[0].message.content)
 
+# Left because image gen free api is only 5 images
 
 # def image_gen(prompt):
 #     print(prompt)

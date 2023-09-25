@@ -4,6 +4,7 @@ import pyttsx3
 import speech_recognition as sr
 from cmd_assistant import cmd
 
+# I have created this instance for resetting the screen and self running again
 class TerminalUI(tk.Frame):
     def set_desired_voice(self):
         desired_voice = "Microsoft Zira Desktop - English (United States)"
@@ -23,7 +24,7 @@ class TerminalUI(tk.Frame):
         self.set_desired_voice()
 
         self.r = sr.Recognizer()
-        self.wake_up_phrase = "hi"
+        self.wake_up_phrase = "hi"      # say this to start the assistant
 
     def create_widgets(self):
         self.output_text = tk.Text(self, height=20, width=50, font=("Courier New", 12))

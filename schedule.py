@@ -11,7 +11,7 @@ def routine():
     workSheetName = os.getenv("WORK_SHEET_NAME")
 
     scope = ['https://spreadsheets.google.com/feeds', 'https://www.googleapis.com/auth/drive']
-    credentials = ServiceAccountCredentials.from_json_keyfile_name(sheetJson, scope)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name(sheetJson, scope)    # your credentials json file
 
     client = gspread.authorize(credentials)
 

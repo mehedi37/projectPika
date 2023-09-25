@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 
-def get_weather(location = "Rajshahi"):
+def get_weather(location = "Rajshahi"):     # default city is Raj
     api_key = os.getenv("WEATHER_API_KEY")  # openWeather API
     url = f"https://api.openweathermap.org/data/2.5/weather?q={location}&appid={api_key}&units=metric"
     response = requests.get(url)
